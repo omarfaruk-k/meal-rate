@@ -25,22 +25,16 @@ class MyApp extends StatelessWidget {
             ),
           ),
           child: Center(
-            child: Text(
-              "Main page",
-              style: TextStyle(fontSize: 30, color: Colors.white),
-            ),
-            // child: ElevatedButton(
-            //   onPressed: () {
-            //     Navigator.pushNamed(context, '/messhome');
-            //   },
-            //   child: const Text('Go to Messhome'),
-            // ),
+            child: Image.asset('assets/images/dice-1.png', width: 200,),
           ),
+          
         ),
-        backgroundColor: Colors.deepPurple[100],
+
+
+
       ),
       routes: {
-        '/messhome': (context) => Messhome(),
+        '/messhome': (context) => const Messhome(),
       },
     );
   }
